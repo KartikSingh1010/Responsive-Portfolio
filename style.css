@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #08171E;
+    line-height: 1.6;
+}
+
+nav {
+    height: 60px;
+    background-color: #042B44;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav .left {
+    font-size: 24px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+nav ul a:hover {
+    color: #71B7DC;
+}
+
+.firstsection {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10% 0;
+    flex-wrap: wrap;
+}
+
+.rightsec img {
+    max-width: 100%;
+    height: auto;
+    padding: 10px;
+}
+
+.leftsec {
+    margin-left: -15%;
+    text-align: center;
+}
+
+.leftsec pre {
+    font-size: 28px;
+}
+
+.break {
+    margin-top: 8%;
+    border: 0.5px solid white;
+}
+
+#About, #Skills, #Projects {
+    width: 80%;
+    font-size: 18px;
+    margin: 50px auto;
+}
+
+.about {
+    margin-top: 30px;
+    line-height: 1.8;
+}
+
+#sk, #pr {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        height: auto;
+        padding: 20px 0;
+    }
+
+    nav .left {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .firstsection {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .leftsec {
+        margin-left: 0;
+    }
+
+    .rightsec img {
+        margin-left: 0;
+    }
+
+    #About, #Skills, #Projects {
+        width: 90%;
+        font-size: 16px;
+        margin-top: 30px;
+    }
+
+    .break {
+        margin-top: 5%;
+    }
+}
